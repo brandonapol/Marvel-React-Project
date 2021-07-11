@@ -1,0 +1,23 @@
+Research props
+Research hooks 
+Research states
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHISbtUiqdBHU1gf6_mMqwTLeKxs39fPo",
+    authDomain: "marvel-api-ba63.firebaseapp.com",
+    projectId: "marvel-api-ba63",
+    storageBucket: "marvel-api-ba63.appspot.com",
+    messagingSenderId: "522897665295",
+    appId: "1:522897665295:web:8d78681e868a66c8ebe27a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
