@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
@@ -81,6 +81,7 @@ export const Home = ( props:Props) => {
                         <li>
                             <Link to='/' className={classes.nav_a}>Home</Link>
                         </li>
+                        <Suspense fallback = { 'loading...' }>
                         <AuthCheck fallback={
                             <li>
                                 <Link to="/signin" className={classes.nav_a}>Sign In</Link>
@@ -94,6 +95,7 @@ export const Home = ( props:Props) => {
                             <Link to="/signin" className={classes.nav_a}>Sign Out</Link>
                         </li>
                         </AuthCheck>
+                        </Suspense>
                     </ul>
                 </div>
             </nav>

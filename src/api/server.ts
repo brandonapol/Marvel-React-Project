@@ -1,8 +1,8 @@
-let token = `17b4484bcf6ce4a4f891b7be7258dd918b621503859affcb`
+let token = `f53b4cd04f214bdf543aa2f01548d28582eb538af8d4a633fb9afdce04cdc271`
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`https://marvel-inventory-api.herokuapp.com/api/characters`,{
+        const response = await fetch(`https://ct-w5-marvelapi.herokuapp.com/api/heroes`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ export const server_calls = {
     },
 
     create: async(data: any = {}) => {
-        const response = await fetch(`https://marvel-inventory-api.herokuapp.com/api/characters`,{
+        const response = await fetch(`https://ct-w5-marvelapi.herokuapp.com/api/heroes`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ export const server_calls = {
         return await response.json()
     },
     update: async (id:string, data:any = {}) => {
-        const response = await fetch(`https://marvel-inventory-api.herokuapp.com/api/characters/${id}`, {
+        const response = await fetch(`https://ct-w5-marvelapi.herokuapp.com/api/heroes/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export const server_calls = {
         });
     },
     delete: async(id:string) => {
-        const response = await fetch(`https://marvel-inventory-api.herokuapp.com/api/characters/${id}`,{
+        const response = await fetch(`https://ct-w5-marvelapi.herokuapp.com/api/heroes/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

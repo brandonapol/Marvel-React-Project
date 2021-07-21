@@ -12,7 +12,7 @@ import { firebaseConfig } from './firebaseConfig'
 
 ReactDOM.render(
   <React.StrictMode>
-    <FirebaseAppProvider firebaseconfig={firebaseConfig}>
+    <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>
     <Provider store = { store }>
     <Router>
       <Switch>
